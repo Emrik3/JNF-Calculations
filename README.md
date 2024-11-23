@@ -32,25 +32,6 @@ The only accepted reason to modify the API of this package
 is to handle issues that can't be resolved in any other
 reasonable way.
 
-### Custom Errors
-#### class NonSquareMatrixError
-    class NonSquareMatrixError(Exception):
-        """Custom error"""
-        func __init__(message string) object
-Returns error NonSquareMatrixError with input message if raised.
-
-#### class NonSympyMatrixError
-    class NonSympyMatrixError(Exception):
-        """Custom error"""
-        func __init__(message string) object
-Returns error NonSympyMatrixError with input message if raised
-
-#### class MatrixPowerError(Exception):
-    class MatrixPowerError(Exception):
-        """Custom error"""
-        func __init__(message string) object
-Returns error MatrixPowerError with input messige if raised
-
 ## Functions
 #### func is_diagonal(A Matrix)
     func is_diagonal(A Matrix) bool
@@ -86,3 +67,21 @@ Returns e to the power of the inserted matrix via jnf calculation.
 #### func jnf_pow(A Matrix, pow int)
     func jnf_pow(A Matrix, pow int) Matrix
 Returns the matrix A to the power of pow using jnf.
+### Custom Errors
+#### class NonSquareMatrixError
+    class NonSquareMatrixError(Exception):
+        """Custom error"""
+        func __init__(message string) object
+Returns error NonSquareMatrixError with input message if raised.
+
+#### class NonSympyMatrixError
+    class NonSympyMatrixError(Exception):
+        """Custom error"""
+        func __init__(message string) object
+Returns error NonSympyMatrixError with input message if raised
+
+#### class MatrixPowerError(Exception):
+    class MatrixPowerError(Exception):
+        """Custom error"""
+        func __init__(message string) object
+Returns error MatrixPowerError with input messige if raised
